@@ -121,8 +121,15 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:/system/etc/usb_audio_policy_configuration.xml
 
 # Camera
+ifeq ($(TARGET_USES_GOOGLE_CAMERA),true)
+PRODUCT_PACKAGES += \
+    GoogleCamera
+endif
+
+ifeq ($(TARGET_USES_SNAP_CAMERA),true)
 PRODUCT_PACKAGES += \
     SnapdragonCamera
+endif
 
 # Device config scripts
 PRODUCT_PACKAGES += \
