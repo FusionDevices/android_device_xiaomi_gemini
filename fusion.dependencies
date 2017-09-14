@@ -12,6 +12,12 @@
     "revision"    : "n-mr2"
  },
  {
+    "remote"      : "voxpopuli",
+    "repository"  : "android_device_voxpopuli",
+    "target_path" : "device/voxpopuli",
+    "revision"    : "msm8996"
+ },
+ {
     "remote"      : "github",
     "repository"  : "LineageOS/android_packages_resources_devicesettings",
     "target_path" : "packages/resources/devicesettings",
