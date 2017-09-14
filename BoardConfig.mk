@@ -33,6 +33,10 @@ TARGET_2ND_CPU_VARIANT := kryo
 
 TARGET_USES_64_BIT_BINDER := true
 
+# STRICT_ALIASING := true
+ENABLE_CPUSETS := true
+ENABLE_SCHEDBOOST := true
+
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := gemini
@@ -168,6 +172,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Power
+TARGET_POWERHAL_VARIANT := voxpopuli
+TARGET_USES_INTERACTION_BOOST := true
+-include device/voxpopuli/sepolicy/sepolicy.mk
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.msm8996
 
 # QCOM
