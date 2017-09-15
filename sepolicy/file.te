@@ -1,7 +1,6 @@
 type fpc_data_file, file_type;
 type dsp_file, fs_type, contextmount_type;
 type proc_irq, fs_type;
-type proc_kernel_sched, fs_type;
 type persist_qc_senseid_file, file_type;
 type persist_usf_cal_file, file_type;
 type proc_touchpanel, sysfs_type, fs_type;
@@ -23,4 +22,3 @@ type proc_kernel_sched, fs_type;
 # /sys
 type sysfs_msm_subsys, sysfs_type, fs_type;
 type sysfs_perf, sysfs_type, fs_type;
-type sysfs_power_management, sysfs_type, fs_type;
