@@ -47,3 +47,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 TARGET_VENDOR := Xiaomi
 
+# Boot animation resolution
+TARGET_BOOT_ANIMATION_RES := 1080
