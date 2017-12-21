@@ -253,6 +253,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Power
+PRODUCT_PACKAGES += \
+    power.msm8996
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \

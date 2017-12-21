@@ -208,6 +208,14 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 TARGET_INIT_VENDOR_LIB := libinit_gemini
 TARGET_RECOVERY_DEVICE_MODULES := libinit_gemini
 
+# Voxpopuli
+ENABLE_CPUSETS := true
+ENABLE_SCHEDBOOST := true
+
+TARGET_POWERHAL_VARIANT := voxpopuli
+TARGET_USES_INTERACTION_BOOST := true
+-include device/voxpopuli/sepolicy/sepolicy.mk
+
 # WebView Beta
 PREBUILT_WEBVIEW_VERSION := chromium
 
