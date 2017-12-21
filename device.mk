@@ -121,8 +121,10 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8996 \
-    libmm-qcamera \
-    SnapdragonCamera
+    libmm-qcamera
+
+TARGET_USES_GOOGLE_CAMERA := true
+TARGET_USES_SNAP_CAMERA := true
 
 # Device config scripts
 PRODUCT_PACKAGES += \
