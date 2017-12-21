@@ -19,3 +19,10 @@ type netmgr_data_file, file_type;
 type debugfs_rpm, debugfs_type, fs_type;
 type debugfs_wlan, debugfs_type, fs_type;
 type debugfs_kgsl, debugfs_type, fs_type;
+
+# /data
+type perfd_data_file, file_type, data_file_type;
+
+# /sys
+type sysfs_msm_subsys, sysfs_type, fs_type;
+type sysfs_perf, sysfs_type, fs_type;
