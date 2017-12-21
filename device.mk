@@ -257,6 +257,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8996
 
+PRODUCT_PROPERTY_OVERRIDES += ro.hardware.power=msm8996
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
